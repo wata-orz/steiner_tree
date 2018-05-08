@@ -25,7 +25,7 @@ Instead of computing d[v][I] for every (v, I) by the above dynamic programming, 
 
 *Let a be the maximum value such that in A-I is connected in the graph G[{v | d[v][I] >= a}]. Then any Steiner tree for A-I must contain some vertex v with d[v][I] <= a. Therefore (v, I) with d[v][I] > a cannot be a part of any optimal solutions.*
 
-After the sending step, we safely delete every (v, I) with d[v][I] > a by the above lemma. We then we apply the splitting step only for the remaining pairs. This significantly reduces the number of pairs we need to consider. We also use several other pruning and speeding-up techniques. We plan to publish the detail later in a paper.
+After the sending step, we safely delete every (v, I) with d[v][I] > a by the above lemma. We then apply the splitting step only for the remaining pairs. This significantly reduces the number of pairs we need to consider. We also use several other pruning and speeding-up techniques. We plan to publish the detail later in a paper.
 
 #### References
 1. Erickson, R.E., Monma, C.L., Veinott Jr., A.F.: Send-and-split method for minimum-concave-cost network flows. Math. Oper. Res. 12(4), 634–664 (1987)
